@@ -9,12 +9,16 @@
         type="image/x-icon">
 
     <title>Phone Hunter</title>
-    
+
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Daisy Ui Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style>
         .roboto-fonts {
@@ -27,7 +31,43 @@
 </head>
 
 <body>
+    <nav class="flex justify-between p-3 md:p-12">
+        <!-- Logo section -->
+        <h2 class="text-3xl font-black">Hot Gadgets</h2>
+        <!-- Button Section -->
+        <div>
+            <button class="btn btn-primary">Sing Up</button>
+        </div>
+    </nav>
 
+    <!-- Banner Section -->
+    <section class="text-center">
+        <div>
+            <h2 class="text-4xl font-black mb-2">Apple Iphone 13 Pro Max</h2>
+            <p class="text-gray-400 text-2xl mb-4">There are many variations of passages of Lorem Ipsum available, but
+                the <br> majority
+                have suffered alteration in some form, by injected humou.</p>
+            <div>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+            <img class="w-[1000px] mx-auto" src="images/Adobe Express - file (2).png" alt="Mobile-image">
+        </div>
+    </section>
+
+    <!-- Search Phone Section -->
+    <section class="text-center mb-14">
+        <h2 class="text-2xl font-bold mb-4">Search Your Phone</h2>
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+                    </svg>
+                    <input type="text" placeholder="Search Your Phone Here" required />
+                </label>
+                <div class="validator-hint hidden">Search Here</div>
+            </div>
+            <button class="btn btn-neutral join-item">Search</button>
+        </div>
+    </section>
 </body>
 
 </html>
