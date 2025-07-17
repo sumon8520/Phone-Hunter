@@ -33,7 +33,7 @@
 <body>
     <nav class="flex justify-between p-3 md:p-12">
         <!-- Logo section -->
-        <h2 class="text-3xl font-black">Hot Gadgets</h2>
+        <h2 class="text-3xl font-bold">Hot Gadgets</h2>
         <!-- Button Section -->
         <div>
             <button class="btn btn-primary">Sing Up</button>
@@ -43,7 +43,7 @@
     <!-- Banner Section -->
     <section class="text-center">
         <div>
-            <h2 class="text-4xl font-black mb-2">Apple Iphone 13 Pro Max</h2>
+            <h2 class="text-4xl font-extrabold mb-2">Apple Iphone 13 Pro Max</h2>
             <p class="text-gray-400 text-2xl mb-4">There are many variations of passages of Lorem Ipsum available, but
                 the <br> majority
                 have suffered alteration in some form, by injected humou.</p>
@@ -63,11 +63,31 @@
                     </svg>
                     <input type="text" placeholder="Search Your Phone Here" required />
                 </label>
-                <div class="validator-hint hidden">Search Here</div>
+                <div id="search-box" class="validator-hint hidden">Search Here</div>
             </div>
-            <button class="btn btn-neutral join-item">Search</button>
+            <button onclick="handleSearch()" class="btn btn-neutral join-item">Search</button>
         </div>
     </section>
+
+    <!-- Loder -->
+    <div class="text-center mb-3">
+        <span id="loder" class="loading loading-bars loading-xl hidden"></span>
+    </div>
+    <div class="text-center mb-10">
+        <button onclick="handleDetails()" class="btn btn-secondary">Show All</button>
+    </div>
+    <!-- Phone Container -->
+    <section class="mx-6">
+        <section id="phone-container" class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        </section>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <div id="modal-container">
+
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
